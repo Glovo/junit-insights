@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 junit-insights
+# junit-insights
 
 **Shows where slow JUnit 5 suites spend time: test phases and Spring context startups**
 
@@ -10,17 +10,16 @@ it records JUnit Jupiter callbacks and Spring context events, then writes one HT
 not a test runner or a service, and it never runs in production. The fork adds two commits on top
 of upstream: Kotlin is no longer embedded in the jar, and the root Gradle wrapper is 6.8.3.
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.2.40-7F52FF?logo=kotlin&logoColor=white)](build.gradle)
-[![Java](https://img.shields.io/badge/Java-1.8_target-orange?logo=openjdk&logoColor=white)](build.gradle)
-[![Gradle](https://img.shields.io/badge/Gradle-6.8.3-02303A?logo=gradle&logoColor=white)](gradle/wrapper/gradle-wrapper.properties)
-[![JUnit Jupiter](https://img.shields.io/badge/JUnit_Jupiter-5.1.0-25A162?logo=junit5&logoColor=white)](library/build.gradle)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.0.0-6DB33F?logo=springboot&logoColor=white)](build.gradle)
-[![Vue](https://img.shields.io/badge/Vue-2.5.16-4FC08D?logo=vuedotjs&logoColor=white)](library/src/frontend/package.json)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](build.gradle)
+[![Java](https://img.shields.io/badge/Java-orange?logo=openjdk&logoColor=white)](build.gradle)
+[![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white)](gradle/wrapper/gradle-wrapper.properties)
+[![JUnit Jupiter](https://img.shields.io/badge/JUnit_Jupiter-25A162?logo=junit5&logoColor=white)](library/build.gradle)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?logo=springboot&logoColor=white)](build.gradle)
+[![Vue](https://img.shields.io/badge/Vue-4FC08D?logo=vuedotjs&logoColor=white)](library/src/frontend/package.json)
 <br/>
-[![Artifact](https://img.shields.io/badge/artifact-de.adesso%3Ajunit--insights_1.1.0-blue?logo=apachemaven)](library/build.gradle)
+[![Artifact](https://img.shields.io/badge/artifact-de.adesso%3Ajunit--insights-blue?logo=apachemaven)](library/build.gradle)
 [![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 <br/>
-[![Test files](https://img.shields.io/badge/test_files-13-informational)](#testing)
 [![Fork of](https://img.shields.io/badge/fork_of-adessoSE%2Fjunit--insights-lightgrey?logo=github)](https://github.com/adessoSE/junit-insights)
 
 </div>
@@ -399,7 +398,7 @@ cd library/src/frontend && npm test             # Jest tests for the Vue report 
 ├── gradle/wrapper/            # root Gradle 6.8.3 wrapper
 ├── .travis.yml                # upstream CI: report UI build, snapshot publish on master
 ├── images/                    # diagram and screenshot used in this README
-├── library/                   # ⭐ the published extension
+├── library/                   # source of truth: the published extension
 │   ├── build.gradle           # jar, maven-publish, artifactory, dokka, npm tasks
 │   ├── gradle/wrapper/        # separate Gradle 4.6 wrapper (used by Travis)
 │   └── src/
